@@ -19,8 +19,6 @@ document.write('</br> Escolha seu pedido: </br>');
 document.write('</br> 0 - Sorvete / 1 - Suco </br>');
 document.write('</br> 2 - Coca cola / 3 - Água gelada </br></br>');
 
-
-
 function pedir() {
     x = prompt('O que deseja pedir?');
 
