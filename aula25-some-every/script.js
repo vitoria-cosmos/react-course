@@ -1,26 +1,24 @@
-// includes
 
-// let nomes = ['Matheus', 'Lucas', 'Joao'];
+// SOME EVERY
 
-// console.log(nomes.includes('Lucas'));
+// some
+let nomes = ['Matheus', 'Lucas', 'Henrique', 'Maria'];
 
-
-// if (nomes.includes('Matheus')) {
-//     console.log('MATHEUS ESTA NA LISTA');
-// } else {
-//     console.log('MATHEUS NÃO ESTA NA LISTA');
-// }
+console.log(nomes.some(nome => nome === 'Maria'));
 
 
-// endWith
-let nome = 'Matheus';
+// every
 
-console.log(nome.endsWith('s'));
+let nomes2 = [
+    {nome: 'Matheus', idade: 18},
+    {nome: 'Maria', idade: 25},
+    {nome: 'Henrique', idade: 15}
+];
 
+console.log(nomes2.every(nome => nome.idade >= 18));
 
-// startsWith
-
-let myName = 'Vitoria';
-
-console.log(myName.startsWith('Vi'));
-
+if(nomes2.every(nome => nome.idade >= 18)) {
+    console.log('TODOS SÃO MAIORES DE 18...');
+} else {
+    console.log('OPS, ALGUÉM É DE MENOR...');
+}
